@@ -1,0 +1,224 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+    	
+		<include layout="@layout/toolbar" />
+        
+        <TextView
+            android:id="@+id/lblIcNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:text="Identity Card Number"
+            tools:ignore="HardcodedText"
+            android:textColor="#000000" />
+		
+		<EditText
+		    android:id="@+id/etIcNo"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="4dp"
+	        android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+	        android:layout_marginBottom="4dp"
+		    android:ems="10"
+		    android:inputType="numberSigned"
+		    android:textColor="#000000" />
+	
+		<TextView
+		    android:id="@+id/lblPhoneNo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:layout_marginTop="4dp"
+		    android:text="Contact Number"
+		    android:textColor="#000000"
+		    tools:ignore="HardcodedText" />
+		
+		<EditText
+		    android:id="@+id/etContactNo"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="4dp"
+	        android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+	        android:layout_marginBottom="4dp"
+		    android:clickable="false"
+		    android:ems="10"
+		    android:focusable="false"
+		    android:focusableInTouchMode="false"
+		    android:inputType="phone"
+		    android:textColor="#000000" />
+		
+		<TextView
+		    android:id="@+id/lblNewPassword"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:layout_marginTop="4dp"
+		    android:text="New Password"
+		    android:textColor="#000000"
+		    tools:ignore="HardcodedText" />
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    
+		    <EditText
+			    android:id="@+id/etNewPassword"
+			    android:layout_width="200dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="4dp"
+				android:layout_marginLeft="6dp"
+            	android:layout_marginRight="6dp"
+				android:layout_marginBottom="4dp"
+				android:layout_weight="0.90"
+			    android:ems="10"
+			    android:inputType="textPassword"
+			    android:textColor="#000000" />
+		    
+		    <CheckBox
+			    android:id="@+id/cbShowPassword"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="4dp"
+				android:layout_marginLeft="6dp"
+            	android:layout_marginRight="6dp"
+				android:layout_marginBottom="4dp"
+				android:layout_weight="0.005"
+		    	android:focusable="false"
+		    	android:textColor="#000000" />
+		    
+		</LinearLayout>
+		
+		<TextView
+		    android:id="@+id/lblConfirmPassword"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:layout_marginTop="4dp"
+		    android:text="Confirm Password"
+		    android:textColor="#000000"
+		    tools:ignore="HardcodedText" />
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		
+			<EditText
+			    android:id="@+id/etConfirmPassword"
+			    android:layout_width="200dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginBottom="4dp"
+			    android:layout_marginLeft="6dp"
+			    android:layout_marginRight="6dp"
+			    android:layout_marginTop="4dp"
+			    android:layout_weight="0.90"
+			    android:ems="10"
+			    android:inputType="textPassword"
+			    android:textColor="#000000"
+			    tools:ignore="InefficientWeight" />
+		    
+		</LinearLayout>
+		
+		<TextView
+		    android:id="@+id/lblSecurityQuestion"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:layout_marginTop="4dp"
+		    android:text="Security Question"
+		    android:textColor="#000000"
+		    tools:ignore="HardcodedText" />
+		
+		<Spinner
+		    android:id="@+id/snSecurityQuestion"
+		    android:layout_width="wrap_content"
+		    android:layout_height="37dp"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+		    android:layout_marginTop="4dp"
+		    android:entries="@array/security_question"
+			android:focusable="false"
+		    android:textColor="#000000" />
+		
+		<TextView
+		    android:id="@+id/lblAnswer"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:layout_marginTop="4dp"
+		    android:text="Security Answer"
+		    android:textColor="#000000"
+		    tools:ignore="HardcodedText" />
+		
+		<EditText
+		    android:id="@+id/etAnswer"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+		    android:layout_marginTop="4dp"
+		    android:ems="10"
+		    android:inputType="text"
+		    android:textColor="#000000" />
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    
+		    <Button
+		        android:id="@+id/btnCancel"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="16dp"
+		        android:layout_marginLeft="6dp"
+		        android:layout_marginRight="6dp"
+		        android:layout_marginTop="12dp"
+		        android:layout_weight="0.40"
+		        android:text="CANCEL"
+		        android:textColor="#000000"
+		        tools:ignore="ButtonStyle,HardcodedText" />
+		
+		    <Button
+		        android:id="@+id/btnSignUp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="16dp"
+		        android:layout_marginLeft="6dp"
+		        android:layout_marginRight="6dp"
+		        android:layout_marginTop="12dp"
+		        android:layout_weight="0.40"
+		        android:text="SIGN UP"
+		        android:textColor="#000000"
+		        tools:ignore="ButtonStyle,HardcodedText" />
+		    
+		</LinearLayout>
+		
+	</LinearLayout>
+		
+</ScrollView>

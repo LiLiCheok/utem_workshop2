@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBF4FA" >
+
+    <ImageView
+        android:id="@+id/about_app_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvStudentName"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="25dp"
+        android:src="@drawable/apps_icon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_app_icon"
+        android:layout_centerHorizontal="true"
+        android:text="Created By Workshop2Group16"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Parent Updater Application (PUA) is specially designed for parent to receive announcement from Jabatan Pendidikan Negeri (JPN) and their children school. PUA enables parents to check their children&apos;s academic result and discipline record."
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvEmailLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="68dp"
+        android:clickable="true"
+        android:text="Workshop2Group16@gmail.com"
+        android:textColor="#0000FF"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEmailLink"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_marginBottom="34dp"
+        android:text="Contact us :"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="34dp"
+        android:text="Overview :"
+        tools:ignore="RtlHardcoded,HardcodedText"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:paddingBottom="15dp"
+        android:text="Parent Updater Application ver. 1.0"
+        android:textSize="17sp"
+        android:textStyle="italic|bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

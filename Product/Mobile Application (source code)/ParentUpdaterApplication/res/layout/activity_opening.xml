@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2BB673" >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/op_view"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/apps_icon_opening" />
+
+    <View
+        android:id="@+id/op_view"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/bregister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/op_view"
+        android:layout_centerHorizontal="true"
+        android:background="#90FFFFFF"
+        android:text="@string/register_button" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bregister"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/login_link"
+        android:textColor="#FFF"
+        android:textStyle="italic|bold" />
+
+</RelativeLayout>

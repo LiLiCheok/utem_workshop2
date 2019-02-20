@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp" >
+    
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:padding="7dp"	/>
+ 
+    <TextView
+        android:id="@+id/tvChildren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:layout_marginLeft="5dp"	/>
+    
+    <ImageView
+        android:id="@+id/ivIndicator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"	/>
+ 
+</RelativeLayout>
